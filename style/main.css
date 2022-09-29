@@ -1,0 +1,107 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(30deg, 38%, 92%);
+}
+body main .card {
+  width: 350px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: hsl(0deg, 0%, 100%);
+}
+body main .card .card-image {
+  background-image: url(../images/image-product-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+}
+body main .card .card-body {
+  padding: 20px 30px 25px 30px;
+}
+body main .card .card-body h1 {
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 21%, 14%);
+  line-height: 2rem;
+  margin: 0.8rem 0 1rem 0;
+}
+body main .card .card-body p {
+  font-size: 14px;
+  line-height: 1.4rem;
+  color: hsl(228deg, 12%, 48%);
+  margin-bottom: 20px;
+}
+body main .card .card-body .price {
+  display: flex;
+  align-items: center;
+}
+body main .card .card-body .price .price-after {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  color: hsl(158deg, 36%, 37%);
+  padding-right: 20px;
+}
+body main .card .card-body .price .price-before {
+  font-size: 0.8rem;
+  text-decoration: line-through;
+  color: hsl(228deg, 12%, 48%);
+}
+body main .card .card-body span.title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: hsl(228deg, 12%, 48%);
+}
+body main .card .card-body button {
+  background-color: hsl(158deg, 36%, 37%);
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: bold;
+  border: none;
+  font-size: 15px;
+}
+body main .card .card-body button span {
+  display: inline-flex;
+  background-image: url("../images/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20px;
+  width: 20px;
+  padding-right: 10px;
+}
+body main .card .card-body button:hover {
+  cursor: pointer;
+  background-color: hsl(159deg, 34%, 21%);
+}
+
+@media (min-width: 720px) {
+  body main .card {
+    display: flex;
+    width: 600px;
+    box-sizing: border-box;
+    align-items: stretch;
+  }
+  body main .card .card-image {
+    background-image: url(../images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(50% + 60px);
+    height: unset;
+  }
+  body main .card .card-body {
+    width: 50%;
+  }
+}/*# sourceMappingURL=main.css.map */
